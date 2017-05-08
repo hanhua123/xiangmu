@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 412px;
+            height: 424px;
+            border: 1px solid black;
+            margin: 0 auto;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+        #box>div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+        }
+        .div2{
+            margin-left: 210px;
+            margin-top: -202px;
+        }
+        .div3{
+            /*margin-left: 210px;*/
+            margin-top: 20px;
+        }
+        .div4{
+            margin-left: 210px;
+            margin-top: -202px;
+        }
+        .div11{
+            position: relative;
+            left: 0px;
+            top: -426px;
+            background-color: #2dd894;
+            display: none;
+            text-align: center;
+            line-height: 200px;
+            font-size: 30px;
+            color: white;
+            font-family: 微软雅黑;
+            opacity: 0.5;
+        }
+        .div22{
+            position: relative;
+            left: 210px;
+            top: -426px;
+            background-color: #2dd894;
+            display: none;
+            text-align: center;
+            line-height: 200px;
+            font-size: 30px;
+            color: white;
+            font-family: 微软雅黑;
+            opacity: 0.5;
+        }
+        .div33{
+            position: relative;
+            left: 0px;
+            top: -204px;
+            background-color: #2dd894;
+            display: none;
+            text-align: center;
+            line-height: 200px;
+            font-size: 30px;
+            color: white;
+            font-family: 微软雅黑;
+            opacity: 0.5;
+        }
+        .div44{
+            position: relative;
+           left: 210px;
+           top: -204px;
+            background-color: #2dd894;
+            display: none;
+            text-align: center;
+            line-height: 200px;
+            font-size: 30px;
+            color: white;
+            font-family: 微软雅黑;
+            opacity: 0.5;
+        }
+    </style>
+    <script src="jquery.min.js"></script>
+</head>
+<body>
+<div id="box">
+    <div class="div1"><img src="88.jpg" alt="" class="a"></div>
+    <div class="div2"><img src="88.jpg" alt="" class="b"></div>
+    <div class="div3"><img src="88.jpg" alt="" class="c"></div>
+    <div class="div4"><img src="88.jpg" alt="" class="d"></div>
+
+    <div class="div11">你好1</div>
+    <div class="div22">你好2</div>
+    <div class="div33">你好3</div>
+    <div class="div44">你好4</div>
+</div>
+<script>
+    $(".div1").hover(function () {
+        $(".div11").show()
+    },function () {
+        $(".div11").hide()
+    })
+    $(".div2").hover(function () {
+        $(".div22").show()
+    },function () {
+        $(".div22").hide()
+    })
+    $(".div3").hover(function () {
+        $(".div33").show()
+    },function () {
+        $(".div33").hide()
+    })
+    $(".div4").hover(function () {
+        $(".div44").show()
+    },function () {
+        $(".div44").hide()
+    })
+</script>
+</body>
+</html>
